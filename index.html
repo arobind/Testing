@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-<style>
-body {
-    background: -webkit-linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
-    background: -o-linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
-    background: linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
-    /* min-height: 100vh; to provide the gradient to the whole screen */
-    min-height: 100vh;
-    /* margin: 0; is added so that page won't show scrollbar when the content is less */
-    margin: 0;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="/favicon.ico" type="image/gif">
+    <title>JS Bin</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <style>
+        body {
+            background: -webkit-linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
+            background: -o-linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
+            background: linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
+            /* min-height: 100vh; to provide the gradient to the whole screen */
+            min-height: 100vh;
+            /* margin: 0; is added so that page won't show scrollbar when the content is less */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-#something{
-font-family: 'Turret Road', cursive;
-}  
-</style>
-  </head>
+        #something {
+            font-family: 'Turret Road', cursive;
+            font-size: 32px;
+            color: white;
+        }
+    </style>
+</head>
+
 <body>
-  
-    <span><h1 id="something"></h1></span>
-   <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
-  <script>   
+    <div id="something">
+        <h1></h1>
+    </div>
 
-var str1 = ['Hello There!!','My Name is Anup','and I do ML',
-            'Look out this space for more']
-var options = {
-  
-  strings: str1,
-  typeSpeed: 40
-};
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+    <script>
+        var str1 = ['Hello There!!', 'My Name is ^500 Anup', 'and I do ML',
+            'Look out this space for more.'
+        ]
+        var options = {
+            startDelay: 100,
+            strings: str1,
+            fadeOut: false,
+            typeSpeed: 50,
 
-var typed = new Typed('#something', options);
-  </script>
+        };
+
+        var typed = new Typed('#something', options);
+    </script>
 </body>
+
 </html>
