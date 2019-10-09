@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="favicon.ico" type="image/gif">
-    <title>Anup Maharana Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <style>
-        body {
-            background: -webkit-linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
-            background: -o-linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
-            background: linear-gradient(180deg, rgb(40, 28, 40), rgb(184, 23, 32));
-            /* min-height: 100vh; to provide the gradient to the whole screen */
-            min-height: 100vh;
-            /* margin: 0; is added so that page won't show scrollbar when the content is less */
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #something {
-            font-family: 'Turret Road', cursive;
-            font-size: 32px;
-            color: white;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="something"></div>
-
-    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
-    <script>
-        var str1 = ['Hello There!!', 'My Name is Anup', 'and I do ML',
-            'Look out this space for more.'
-        ]
-        var options = {
-            strings: str1,
-            typeSpeed: 50,
-
-        };
-
-        var typed = new Typed('#something', options);
-    </script>
-</body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="icon" href="favicon.ico" type="image/gif">
+      <title>Anup Maharana Portfolio</title>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script>
+         var str1 = ['Hello There!!', 'My Name is Anup', 'and I do ML',
+             'Look out this space for more.'
+         ]
+         var options = {
+             strings: str1,
+             typeSpeed: 50,
+         };
+         var typed = new Typed('#something', options);
+      </script>  
+      <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+      <style>
+         body {
+         background: -webkit-linear-gradient(135deg, rgb(44,19,37), rgb(32,100,127));
+         background: -o-linear-gradient(135deg, rgb(44,19,37), rgb(32,100,127));
+         background: linear-gradient(135deg, rgb(44,19,37), rgb(32,100,127));
+         min-height: 100vh;
+         margin: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .typed-cursor{
+         font-size: 40px;
+         color: white;
+         text-shadow: 0 0 15px whitesmoke;
+         }
+         #something {
+         text-shadow: 0 0 15px whitesmoke;
+         font-family: 'Turret Road', cursive;
+         font-size: 32px;
+         color: white;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="something"></div>
+      <script>
+         var str1 = ['Hello There!!', 'My Name is Anup', 'and I do ML',å
+             'Look out this space for more.'
+         ]
+         var options = {
+             strings: str1,
+             typeSpeed: 50,
+         };
+         var typed = new Typed('#something', options);
+      </script>
+   </body>
 </html>
